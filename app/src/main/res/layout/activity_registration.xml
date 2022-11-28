@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17sdp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/_96sdp"
+            android:layout_height="@dimen/_96sdp"
+
+            android:src="@drawable/profile"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <EditText
+            android:id="@+id/reg_name"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/edittext_shape"
+            android:fontFamily="@font/spartan_thin"
+            android:hint="Name"
+            android:inputType="text"
+            android:padding="@dimen/_8sdp"
+
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/edittext_shape"
+            android:fontFamily="@font/spartan_thin"
+            android:hint="E mail Address"
+
+
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/reg_password"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/edittext_shape"
+            android:fontFamily="@font/spartan_thin"
+            android:hint="Password"
+
+            android:inputType="textPassword"
+
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/reg_confirmPassword"
+
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/edittext_shape"
+            android:fontFamily="@font/spartan_thin"
+            android:hint="ConfirmPassword"
+
+            android:inputType="textPassword"
+
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/reg_singUp"
+
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/edittext_shape"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/spartan_bold"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_500sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account."
+            android:fontFamily="@font/spartan_bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:fontFamily="@font/spartan_bold"
+            android:textColor="@color/purple"
+            android:id="@+id/txt_signIn"
+            android:textSize="@dimen/_13sdp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
